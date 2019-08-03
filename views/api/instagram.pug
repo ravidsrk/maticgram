@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+  .pb-2.mt-2.mb-4.border-bottom
+    h2
+      i.fab.fa-instagram(style='color: #517fa4').fa-sm
+      | My Instagram
+      strong  Media
+
+  br
+  .row
+    for image in myRecentMedia
+      .col-xs-3
+        a.thumbnail(href=image.link)
+          img(src=image.images.standard_resolution.url, height='320px')
