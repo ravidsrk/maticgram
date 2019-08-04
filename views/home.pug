@@ -1,6 +1,58 @@
 extends layout
 
 block content
-  h1 Maticgram
-  p.lead Patreaon for Instagram
-  hr
+  .row.justify-content-center
+    .col-12.col-md-10.col-lg-9.text-center.aos-init.aos-animate(data-aos='fade-up')
+      // Image (mobile)
+      img.img-fluid.mb-6.d-lg-none(src='assets/img/illustrations/illustration-8.png', alt='...')
+      // Heading
+      h2.display-3.font-weight-bold
+        | MarketPlace for Instagrammers. 
+      // Text
+      p.font-size-lg.text-muted.mb-6.mb-md-8
+        | Artists, Creators, Teachers, Professionals use MaticGram to monetise their work by generating NFTs and receiveing tips in NFTs.
+      // Button
+      a.btn.btn-primary.mr-1.lift(href='#!')
+        | Get started 
+  
+  .row
+    .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
+      // Card
+      .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
+        // Image
+        img.card-img-top(src='https://scontent.cdninstagram.com/vp/dfa7e763821ee6c552354d42e94f5eb8/5DEE903C/t51.2885-15/sh0.08/e35/s640x640/32321870_809827019208728_1817879461043896320_n.jpg?_nc_ht=scontent.cdninstagram.com' alt='...')
+        // Shape
+        .position-relative
+          .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
+            svg(viewbox='0 0 2880 48' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z' fill='currentColor')
+        // Body
+        .card-body.position-relative.text-center
+          button.btn.btn-primary-soft Add to Patreon
+
+  .row
+    .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
+      // Card
+      .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
+        // Image
+        img.card-img-top(src='https://scontent.cdninstagram.com/vp/dfa7e763821ee6c552354d42e94f5eb8/5DEE903C/t51.2885-15/sh0.08/e35/s640x640/32321870_809827019208728_1817879461043896320_n.jpg?_nc_ht=scontent.cdninstagram.com' alt='...')
+        // Shape
+        .position-relative
+          .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
+            svg(viewbox='0 0 2880 48' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z' fill='currentColor')
+        // Body
+        .card-body.position-relative
+          // Badge
+          .position-relative.text-right.mt-n8.mr-n4.mb-3
+            span.badge.badge-pill.badge-success
+              span.h6.text-uppercase $49/mo
+          // Heading
+          h3
+            | Shared Coworking
+          // Text
+          p.text-muted
+            | Open seating is available weekdays from 7am - 7pm and weekends from 9am - 5pm.
+          button.btn.btn-primary.btn-sm.mb-1 Buy
+
+          button.btn.btn-success.btn-sm.ml-10.mb-1 Tip

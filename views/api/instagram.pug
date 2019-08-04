@@ -6,12 +6,19 @@ block content
       i.fab.fa-instagram(style='color: #517fa4').fa-sm
       | My Instagram
       strong  Media
-
   br
   .row
     for image in myRecentMedia
-      .col-xs-3
-        .card.card-border.border-success
-          .card-body
-            a.thumbnail(href=image.link)
-              img(src=image.images.standard_resolution.url, height='200px')
+      .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
+        // Card
+        .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
+          // Image
+          img.card-img-top(src=image.images.standard_resolution.url, height='200px')
+          // Shape
+          .position-relative
+            .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
+              svg(viewbox='0 0 2880 48' fill='none' xmlns='http://www.w3.org/2000/svg')
+                path(d='M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z' fill='currentColor')
+          // Body
+          .card-body.position-relative.text-center
+            button.btn.btn-primary-soft Add to Patreon
