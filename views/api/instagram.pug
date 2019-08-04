@@ -13,7 +13,7 @@ block content
         // Card
         .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
           // Image
-          img.card-img-top(src=image.images.standard_resolution.url, height='200px')
+          img.card-img-top(src=image.images.standard_resolution.url)
           // Shape
           .position-relative
             .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
@@ -22,3 +22,4 @@ block content
           // Body
           .card-body.position-relative.text-center
             button.btn.btn-primary-soft Add to Patreon
+              a(href="/create/"+ image.images.standard_resolution.url)

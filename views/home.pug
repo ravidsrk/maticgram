@@ -14,23 +14,59 @@ block content
       // Button
       a.btn.btn-primary.mr-1.lift(href='#!')
         | Get started 
-  
-  .row
+
+  .row.mt-10
     .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
+      h2.display-heading Live Patreons
       // Card
       .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
         // Image
-        img.card-img-top(src='https://scontent.cdninstagram.com/vp/dfa7e763821ee6c552354d42e94f5eb8/5DEE903C/t51.2885-15/sh0.08/e35/s640x640/32321870_809827019208728_1817879461043896320_n.jpg?_nc_ht=scontent.cdninstagram.com' alt='...')
+        img.card-img-top(src='https://scontent.cdninstagram.com/vp/c098afe9bd520f68b3fb93f78ae110e9/5DDF3A15/t51.2885-15/sh0.08/e35/s640x640/45269217_1134141540080838_2354922403209221691_n.jpg?_nc_ht=scontent.cdninstagram.com' alt='...')
         // Shape
         .position-relative
           .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
             svg(viewbox='0 0 2880 48' fill='none' xmlns='http://www.w3.org/2000/svg')
               path(d='M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z' fill='currentColor')
         // Body
-        .card-body.position-relative.text-center
-          button.btn.btn-primary-soft Add to Patreon
+        .card-body.position-relative
+          // Badge
+          .position-relative.text-right.mt-n8.mr-n4.mb-3
+            span.badge.badge-pill.badge-success
+              span.h6.text-uppercase $49/mo
+          // Heading
+          h3
+            | Shared Coworking
+          // Text
+          p.text-muted
+            | Open seating is available weekdays from 7am - 7pm and weekends from 9am - 5pm.
+          button.btn.btn-primary.btn-sm.mb-1 Buy
 
-  .row
+          button.btn.btn-success.btn-sm.ml-10.mb-1 Tip
+    .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
+      // Card
+      .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
+        // Image
+        img.card-img-top(src='https://scontent.cdninstagram.com/vp/420e8de2addc024a58352d9979f60db4/5DD852DA/t51.2885-15/sh0.08/e35/s640x640/44509966_264862734374086_5857107260001529429_n.jpg?_nc_ht=scontent.cdninstagram.com' alt='...')
+        // Shape
+        .position-relative
+          .shape.shape-bottom.shape-fluid-x.svg-shim.text-white
+            svg(viewbox='0 0 2880 48' fill='none' xmlns='http://www.w3.org/2000/svg')
+              path(d='M0 48H1437.5H2880V0H2160C1442.5 52 720 0 720 0H0V48Z' fill='currentColor')
+        // Body
+        .card-body.position-relative
+          // Badge
+          .position-relative.text-right.mt-n8.mr-n4.mb-3
+            span.badge.badge-pill.badge-success
+              span.h6.text-uppercase $49/mo
+          // Heading
+          h3
+            | Shared Coworking
+          // Text
+          p.text-muted
+            | Open seating is available weekdays from 7am - 7pm and weekends from 9am - 5pm.
+          button.btn.btn-primary.btn-sm.mb-1 Buy
+
+          button.btn.btn-success.btn-sm.ml-10.mb-1 Tip
     .col-12.col-md-4.aos-init.aos-animate(data-aos='fade-up')
       // Card
       .card.shadow-light-lg.mb-6.mb-md-0.lift.lift-lg
